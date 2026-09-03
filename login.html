@@ -1,35 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página de inicio de sesión</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-</html>
 <body>
-    <form name="contacto" id="contacto">
+    <form name="contacto" id="contacto" novalidate>
         <fieldset>
-        <legend>Inicio de sesión</legend>
-<br><br>
-        <label>Nombre de usuario: </label>
-        <input type="text"
-        required
-        id="username"
-        placeholder="Nombre de usuario...">
-<br><br>
-        <label>Correo electrónico: </label>
-        <input type="text"
-        required
-        id="correo"
-        placeholder="Correo electrónico...">
-<br><br>
-        <label>Contraseña: </label>
-        <input type="text"
-        required
-        id="contraseña"
-        placeholder="Contraseña...">
-<br><br>
-        <button>INGRESAR</button>
+            <legend>Inicio de sesión</legend>
+            <br><br>
+
+            <div id="error-login" style="color: red; font-weight: bold; margin-bottom: 15px;"></div>
+
+            <label for="username">Nombre de usuario: </label>
+            <input type="text"
+                   id="username"
+                   placeholder="Nombre de usuario...">
+            <br><br>
+
+            <label for="correo">Correo electrónico: </label>
+            <input type="text"
+                   id="correo"
+                   placeholder="Correo electrónico...">
+            <br><br>
+
+            <label for="contraseña">Contraseña: </label>
+            <input type="password"
+                   id="contraseña"
+                   placeholder="Contraseña...">
+            <br><br>
+
+            <button type="button" onclick="validarLogin()">INGRESAR</button>
+            <br><br>
+
+            <p>¿No tienes cuenta? <a href="registro.html">Regístrate aquí</a></p>
+            <p><a href="index.html">Volver a la página principal</a></p>
+        </fieldset>
+    </form>
+
     <script src="js/script.js"></script>
 </body>
+</html>
