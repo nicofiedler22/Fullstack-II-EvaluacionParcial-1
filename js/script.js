@@ -1,4 +1,3 @@
-
 // PRODUCTO
 let comprar = document.getElementById("comprar");
 let total = document.getElementById("total");
@@ -93,8 +92,8 @@ function validarLogin() {
         return;
     }
 
-    else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(correo.value)) {
-        error.innerText = "El correo debe contener '@' y un punto '.'.";
+    else if (!/^[^\s@]+@(gmail\.com|outlook\.com|duocuc\.cl)$/i.test(correo.value)) {
+        error.innerText = "solo gmail.com , outlook.com o duocuc.cl como dominios permitidos.";
         correo.focus();
         return;
     }
@@ -189,8 +188,8 @@ function validarRegistro() {
         return;
     }
 
-    else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(correo.value)) {
-        error.innerText = "El correo debe tener un formato válido (con @ y punto).";
+    else if (!/^[^\s@]+@(gmail\.com|outlook\.com|duocuc\.cl)$/i.test(correo.value)) {
+        error.innerText = "solo gmail.com , outlook.com o duocuc.cl como dominios permitidos.";
         correo.focus();
         return;
     }
