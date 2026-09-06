@@ -68,7 +68,6 @@ comprar.addEventListener("click", function(){
 //LOGIN
 function validarLogin() {
 
-    // Captura de campos.
     let user = document.getElementById("username");
     let correo = document.getElementById("correo");
     let pass = document.getElementById("contraseña");
@@ -106,7 +105,6 @@ function validarLogin() {
         return;
     }
 
-    // Inicio de sesión exitoso.
     else {
         alert("¡Inicio de sesión exitoso!");
         window.location.href = "index.html";
@@ -116,7 +114,6 @@ function validarLogin() {
 //REGISTRO
 function validarRegistro() {
 
-    // Captura de campos.
     let nombre = document.getElementById("nombre");
     let apellido = document.getElementById("apellido");
     let usuario = document.getElementById("crearusuario");
@@ -204,7 +201,6 @@ function validarRegistro() {
         return;
     }
 
-    // Requisito funcional: contraseña con letra y número.
     else if (!/^(?=.*[A-Za-z])(?=.*\d).{6,}$/.test(pass.value)) {
         error.innerText = "La contraseña debe contener al menos una letra y un número.";
         pass.focus();
