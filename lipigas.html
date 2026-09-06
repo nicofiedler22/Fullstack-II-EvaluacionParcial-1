@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lipigas</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <nav id="vinculos">
+        <ul>
+            <a href="index.html">VOLVER AL INICIO</a>
+            <a href="productos.html">CATALOGO</a>
+            <a href="login.html">INICIAR SESION</a>
+            <a href="registro.html">REGISTRARME</a>
+        </ul>
+    </nav>
+
+    <br>
+
+    <header id="encabezado">
+        <h1>Gas Licuado "El Volcan"</h1>
+        <img src="img/logo.png">
+        <h2>CATÁLOGO DE PRODUCTOS</h2>
+        <img src="img/logolipigas.jpg" id="logo-marca">
+    </header>
+
+    <main id="contenido">
+
+        <section id="productos-gas">
+
+            <h2>Balones de Gas</h2>
+
+            <p>
+                Seleccione uno de nuestros balones de gas disponibles.
+            </p>
+
+            <div id="catalogo-gas">
+
+                <div class="producto">
+                    <img src="img/l5kg.jpg">
+                    <h3>Balón de Gas 5 KG</h3>
+                    <p>Ideal para necesidades de menor consumo.</p>
+                    <p>$12.000</p>
+                    <input type="radio" name="balon" id="gas5" value="12000">
+                    <label for="gas5">Seleccionar</label>
+                </div>
+
+                <div class="producto">
+                    <img src="img/l11kg.jpg">
+                    <h3>Balón de Gas 11 KG</h3>
+                    <p>Una alternativa práctica para el hogar.</p>
+                    <p>$22.000</p>
+                    <input type="radio" name="balon" id="gas11" value="22000">
+                    <label for="gas11">Seleccionar</label>
+                </div>
+
+                <div class="producto">
+                    <img src="img/l15kg.jpg">
+                    <h3>Balón de Gas 15 KG</h3>
+                    <p>Una opción para hogares de consumo frecuente.</p>
+                    <p>$27.000</p>
+                    <input type="radio" name="balon" id="gas15" value="27000">
+                    <label for="gas15">Seleccionar</label>
+                </div>
+
+                <div class="producto">
+                    <img src="img/l45kg.jpg">
+                    <h3>Balón de Gas 45 KG</h3>
+                    <p>Para clientes con mayores necesidades de consumo.</p>
+                    <p>$72.000</p>
+                    <input type="radio" name="balon" id="gas45" value="72000">
+                    <label for="gas45">Seleccionar</label>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section id="productos-extra">
+
+            <h2>Productos adicionales</h2>
+
+            <p>
+                También puede agregar alguno de los siguientes productos a su compra.
+            </p>
+
+            <div id="catalogo-extra">
+
+                <div class="producto">
+                    <img src="img/perro.jpg">
+                    <h3>Perro</h3>
+                    <p>Lleva a tu quiltro preferido por una modica suma extra, solo si quieres</p>
+                    <p>$4.000</p>
+                    <input type="checkbox" id="extra1" value="4000">
+                    <label for="extra1">Agregar</label>
+                </div>
+
+                <div class="producto">
+                    <img src="img/extra.jpg">
+                    <h3>Carga 11 kg plus</h3>
+                    <p>Incluya, por un precio aun mas caro, un balon de 11 kilos lipigas plus para...</p>
+                    <p>$30.000</p>
+                    <input type="checkbox" id="extra2" value="30000">
+                    <label for="extra2">Agregar</label>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section id="compra">
+
+            <h2>Total: $<span id="total">0</span></h2>
+
+            <button id="comprar">COMPRAR</button>
+
+        </section>
+
+    </main>
+
+
+    <footer id="pie">
+        <p><small>&copy; Todos los derechos y zurdos reservados</small></p>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
